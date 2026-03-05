@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siquijor Retreats - Luxury Island Living</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="antialiased">
+    
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">SIQUIJOR.</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#properties">Properties</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-primary-custom" href="index.html#booking"
+            >Book Now</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-bg">
+        <!-- Pexels Video Background -->
+        <div class="video-container">
+          <video 
+            id="hero-video"
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            class="video-background video-animate">
+            <source src="https://www.pexels.com/download/video/29984779/" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-text">
+          <span class="font-serif">Luxury</span><br />
+          <span class="font-sans">Island</span><br />
+          <span class="font-serif">Retreats</span>
+        </h1>
+        <p class="mt-4 hero-sub">
+          Discover the magic of Siquijor. Mystical, serene, and breathtakingly
+          beautiful.
+        </p>
+        <div class="mt-5">
+          <a href="#booking" class="btn-primary-custom">Book Your Stay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="about-image reveal-img-wrapper">
+              <img
+                src="https://www.agoda.com/press/wp-content/uploads/2025/06/eibner-saliba-3T9dDY0WqDI-unsplash-3-scaled.jpg"
+                alt="Siquijor Island"
+                class="w-100 h-100 object-cover grayscale-hover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title reveal-text">About Siquijor</h2>
+            <p class="lead reveal-text">The Island of Fire</p>
+            <p class="reveal-text">
+              Siquijor is a small island province in the Philippines known for
+              its pre-colonial traditions and healing practices. It is a place
+              where the ocean meets the jungle, offering a tranquility that is
+              hard to find elsewhere.
+            </p>
+            <p class="reveal-text">
+              From the luminous waterfalls to the ancient banyan trees, every
+              corner tells a story. Our luxury retreats are designed to help you
+              experience the authentic beauty of this mystical island.
+            </p>
+            <a href="#properties" class="btn-secondary-custom reveal-text"
+              >Explore Properties</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTIES SECTION -->
+    <section id="properties" class="properties-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title reveal-text">Our Properties</h2>
+          <p class="lead text-muted reveal-text">
+            Choose from our collection of luxury villas and beachfront homes
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Property 1 -->
+          <div class="col-lg-4">
+            <div class="property-card reveal-img-wrapper">
+              <div class="property-image">
+                <img
+                  src="https://aw-d.tripcdn.com/images/0220d12000l7hcb6xF06E.jpg"
+                  class="w-100 h-100 object-cover parallax-img"
+                />
+              </div>
+              <div class="property-content">
+                <h3 class="property-title">Kalachuchi Hotel</h3>
+                <p class="property-features">
+                  3 Bedrooms • 2 Bathrooms • Ocean View
+                </p>
+                <p class="property-price">₱15,000 / night</p>
+                <a href="#booking" class="btn-secondary-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 2 -->
+          <div class="col-lg-4">
+            <div class="property-card reveal-img-wrapper">
+              <div class="property-image">
+                <img
+                  src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/537025215.jpg?k=830de4f383775b2b717addba8230df8687bc0f2d1c76c60a90d023987d7b722a&o="
+                  class="w-100 h-100 object-cover parallax-img"
+                />
+              </div>
+              <div class="property-content">
+                <h3 class="property-title">Beach House</h3>
+                <p class="property-features">
+                  4 Bedrooms • 3 Bathrooms • Beachfront
+                </p>
+                <p class="property-price">₱25,000 / night</p>
+                <a href="#booking" class="btn-secondary-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 3 -->
+          <div class="col-lg-4">
+            <div class="property-card reveal-img-wrapper">
+              <div class="property-image">
+                <img
+                  src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/719759097.jpg?k=6bcf44a58b00353a051c3bc29c5ebfd9566bae68a800d08fef4da4602846e5a7&o="
+                  class="w-100 h-100 object-cover parallax-img"
+                />
+              </div>
+              <div class="property-content">
+                <h3 class="property-title">Mountain Retreat</h3>
+                <p class="property-features">
+                  2 Bedrooms • 2 Bathrooms • Mountain View
+                </p>
+                <p class="property-price">₱12,000 / night</p>
+                <a href="#booking" class="btn-secondary-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title reveal-text">Gallery</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="gallery-item reveal-img-wrapper">
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/719758974.jpg?k=7b0e003750ba909606777d2cf6500c5e5b81a12e1eca704baefd4022edd657ac&o="
+                class="w-100 h-100 object-cover parallax-img"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="gallery-item reveal-img-wrapper mt-4 mt-md-0">
+              <img
+                src="https://shewandersabroad.com/wp-content/uploads/2022/02/Salagdoong-Beach-Siquijor-6.jpg"
+                class="w-100 h-100 object-cover parallax-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section id="booking" class="booking-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="section-title text-light reveal-text">
+              Book Your<br />Stay
+            </h2>
+            <p class="lead text-light-soft mt-3 reveal-text">
+              Ready to experience the magic of Siquijor? Fill out the form and
+              we'll get back to you within 24 hours.
+            </p>
+
+            <div class="contact-info mt-5 reveal-text">
+              <div class="d-flex align-items-center mb-3">
+                <span class="contact-icon me-3">📞</span>
+                <span>+63 912 345 6789</span>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <span class="contact-icon me-3">✉️</span>
+                <span>bookings@siquijorretreats.com</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="contact-icon me-3">📍</span>
+                <span>Siquijor Island, Philippines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Booking Form -->
+          <div class="col-lg-6">
+            <div class="booking-form reveal-img-wrapper">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="john@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="+63 912 345 6789"
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Check-in</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Check-out</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Property</label>
+                  <select class="form-select">
+                    <option>Kalachuchi Hotel</option>
+                    <option>Beach House</option>
+                    <option>Mountain Retreat</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Any special requests?"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn-primary-custom w-100">
+                  Send Booking Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title reveal-text">Get In Touch</h2>
+          <p class="lead text-muted reveal-text">
+            Have questions? We'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="contact-card reveal-text">
+              <div class="contact-icon-large mb-3">📍</div>
+              <h4>Visit Us</h4>
+              <p>Siquijor Island, Philippines</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-card reveal-text">
+              <div class="contact-icon-large mb-3">📞</div>
+              <h4>Call Us</h4>
+              <p>+63 912 345 6789</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-card reveal-text">
+              <div class="contact-icon-large mb-3">✉️</div>
+              <h4>Email Us</h4>
+              <p>bookings@siquijorretreats.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">© 2024 Siquijor Retreats. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link ms-3">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link to your JS file -->
+    <script src="script.js"></script>
+  </body>
+</html>
